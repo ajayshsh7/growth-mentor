@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-const APIKEY = import.meta.env.FIREBASE_API_KEY;
+
 
 const firebaseConfig = {
-  apiKey: APIKEY,
-  authDomain: "bookwise-7da3c.firebaseapp.com",
-  projectId: "bookwise-7da3c",
-  appId: "1:213466128975:web:575d48fae2031a7be0003a",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
