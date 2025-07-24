@@ -23,7 +23,7 @@ export default function FeatureGrid() {
   ];
 
   return (
-    <div className="max-w-[82rem] mx-auto pt-16 text-center px-4 ">
+    <div className="max-w-[82rem] mx-auto pt-16 text-center px-4 mt-20">
       <h2 className="text-3xl md:text-4xl sm:text2x1 font-bold mb-8">What do you get?</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {features.map((feature, index) => (
